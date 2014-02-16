@@ -3,6 +3,7 @@ package com;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class CalendarEx {
 
@@ -13,11 +14,15 @@ public class CalendarEx {
 		
 		cal.add(Calendar.MONTH, 1);
 		
+		
 		Date d = cal.getTime();
 		
 		System.out.println(d);
 		
-		DateFormat dfa = DateFormat.getDateInstance();
+		Locale locIT = new Locale("it", "IT");
+		
+		
+		DateFormat dfa = DateFormat.getDateInstance(DateFormat.FULL,locIT);
 		System.out.println(dfa.format(d));
 		
 		
