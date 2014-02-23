@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<project name="Ant-Test" default="test" basedir=".">
+  <!-- Sets variables which can later be used. -->
+  <!-- The value of a property is accessed via ${} -->
+  <property name="src.dir" location="src" />
+  
+  <property name="build.dir" location="bin" />
+
+  <!-- Variables used for JUnit testin -->
+  <property name="Test.dir" location="src" />
+  <property name="test.report.dir" location="testreport"/>
+
+  <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
+  <path id="junit.class.path">
+    <fileset dir="C:/NotBackedUp/TBOS/Library/selenium-2.37.0/libs" includes = "*.jar" />
+  	<fileset dir="C:/NotBackedUp/TBOS/Library/poi-3.9/lib" includes = "*.jar" />
+  	<fileset dir="C:/NotBackedUp/EclipseWorkspace/AdminTbos/bin" includes="*.jar" />		
+    <pathelement location="${build.dir}" />
+  </path>
+	
+
+	<!-- Deletes the existing build, docs and dist directory-->
+	  <target name="clean">
+	    <delete dir="${build.dir}" />
+	    <delete dir="${test.report.dir}/html/com/Admin/Test/.*"/>
+	  </target>
+	
+  <!-- Creates the  build, docs and dist directory-->
+  <target name="makedir">
+    <mkdir dir="${build.dir}" />
+    <mkdir dir="${test.report.dir}" />
+  </target>
+
+  <!-- Compiles the java code (including the usage of library for JUnit -->
+  <target name="compile" depends=" makedir">
+    <javac srcdir="${src.dir}" destdir="${build.dir}">
+      <classpath refid="junit.class.path" />
+    </javac>
+
+  </target>
+
+  <!-- Run the JUnit Tests -->
+  <!-- Output is XML, could also be plain-->
+  <target name="junit" depends="compile">
+    <junit printsummary="on" fork="off" haltonfailure="yes" showoutput = "true">
+      <classpath refid="junit.class.path" />
+    	
+      <formatter type="xml" />  	
+    	 <batchtest todir="${test.report.dir}">
+    	        <fileset dir="${src.dir}">
+    	          
+    	        	<include name="**/*CreateContentTest*.java" />
+    	        </fileset>
+    	      </batchtest>
+     	     	
+    </junit>
+  </target>
+	
+	<junitreport todir="${test.report.dir}">
+			  <fileset dir="${test.report.dir}">
+			    <include name="TEST-*.xml"/>
+			  </fileset>
+			  <report format="frames" todir="${test.report.dir}/html/"/>
+			</junitreport>
+			
+	
+	
+	
+
+  <target name="test" depends="compile, junit">
+    <description>Main target</description>
+  </target>
+
+</project> 
+
+
+
