@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: fundtransfer.test.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 63.057 sec <<< FAILURE!
+Then ensure the fund transfer is complete with \"$100 transferred successfully to Jim!!\" message         Time elapsed: 0.016 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[$100 transferred successfully to Jim!!]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_the_fund_transfer_is_complete(FundTransferStepDefs.java:45)
+	at ?.Then ensure the fund transfer is complete with "$100 transferred successfully to Jim!!" message(fundtransfer\test\fundtransfer.feature:11)
+Scenario: Valid Payee    Time elapsed: 0.016 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[$100 transferred successfully to Jim!!]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_the_fund_transfer_is_complete(FundTransferStepDefs.java:45)
+	at ?.Then ensure the fund transfer is complete with "$100 transferred successfully to Jim!!" message(fundtransfer\test\fundtransfer.feature:11)
+Then ensure a transaction failure message \"Transfer failed!! \'Unmesh\' is not registered in your List of Payees\" is displayed               Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[Transfer failed!! 'Unmesh' is not registered in your List of Payees]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ?.Then ensure a transaction failure message "Transfer failed!! 'Unmesh' is not registered in your List of Payees" is displayed(fundtransfer\test\fundtransfer.feature:18)
+Scenario: Invalid Payee          Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[Transfer failed!! 'Unmesh' is not registered in your List of Payees]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ?.Then ensure a transaction failure message "Transfer failed!! 'Unmesh' is not registered in your List of Payees" is displayed(fundtransfer\test\fundtransfer.feature:18)
+Then ensure a transaction failure message \"Transfer failed!! account cannot be overdrawn\" is displayed                     Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[Transfer failed!! account cannot be overdrawn]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ?.Then ensure a transaction failure message "Transfer failed!! account cannot be overdrawn" is displayed(fundtransfer\test\fundtransfer.feature:25)
+Scenario: Account is overdrawn past the overdraft limit                Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[Transfer failed!! account cannot be overdrawn]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ?.Then ensure a transaction failure message "Transfer failed!! account cannot be overdrawn" is displayed(fundtransfer\test\fundtransfer.feature:25)

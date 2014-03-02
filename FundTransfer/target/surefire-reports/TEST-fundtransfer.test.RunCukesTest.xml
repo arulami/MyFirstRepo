@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="6" time="63.057" errors="0" skipped="0" tests="18" name="fundtransfer.test.RunCukesTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Jonathan\Selenium Testing Tools Cookbook\Chapter 11\Java\Cucumber-JVM\FundTransfer"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Jonathan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8"/>
+    <property name="classworlds.conf" value="E:\Jonathan\WorkspaceSony\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9175433551686312753.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\PROGRAM FILES\BROADCOM\BROADCOM 802.11 NETWORK ADAPTER;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X86;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X64;C:\PROGRAM FILES\SONY\VAIO IMPROVEMENT;C:\PROGRAM FILES (X86)\SONY\VAIO BIOS DATA TRANSFER UTILITY\;C:\PROGRAM FILES (X86)\SONY\VAIO STARTUP SETTING TOOL;C:\Program Files\Java\jdk1.7.0_45\BIN;C:\Program Files\Java\ant\apache-ant-1.9.3\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Apache\apache-maven-3.1.1-bin\apache-maven-3.1.1\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.2"/>
+    <property name="user.home" value="C:\Users\Jonathan"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Jonathan"/>
+    <property name="java.class.path" value="/E:/Jonathan/EclipseJuno/eclipse/configuration/org.eclipse.osgi/bundles/531/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Jonathan\Selenium Testing Tools Cookbook\Chapter 11\Java\Cucumber-JVM\FundTransfer\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.bootclasspath" value="/E:/Jonathan/EclipseJuno/eclipse/configuration/org.eclipse.osgi/bundles/531/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0" classname="Given the user is on Fund Transfer Page   " name="Given the user is on Fund Transfer Page   "/>
+  <testcase time="0" classname="When he enters \&quot;Jim\&quot; as payee name    " name="When he enters \&quot;Jim\&quot; as payee name    "/>
+  <testcase time="0" classname="And he enters \&quot;100\&quot; as amount     " name="And he enters \&quot;100\&quot; as amount     "/>
+  <testcase time="0" classname="And he Submits request for Fund Transfer      " name="And he Submits request for Fund Transfer      "/>
+  <testcase time="0.016" classname="Then ensure the fund transfer is complete with \&quot;$100 transferred successfully to Jim!!\&quot; message       " name="Then ensure the fund transfer is complete with \&quot;$100 transferred successfully to Jim!!\&quot; message       ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[$100 transferred successfully to Jim!!]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[$100 transferred successfully to Jim!!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_the_fund_transfer_is_complete(FundTransferStepDefs.java:45)
+	at ✽.Then ensure the fund transfer is complete with &quot;$100 transferred successfully to Jim!!&quot; message(fundtransfer\test\fundtransfer.feature:11)
+</failure>
+    <system-out>&amp;#27;[1A    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mhe Submits request for Fund Transfer&amp;#27;[0m                                                        &amp;#27;[90m# FundTransferStepDefs.He_submits_request_for_fund_transfer()&amp;#27;[0m
+    &amp;#27;[90mThen &amp;#27;[0m&amp;#27;[90mensure the fund transfer is complete with &quot;&amp;#27;[0m&amp;#27;[90m&amp;#27;[1m$100 transferred successfully to Jim!!&amp;#27;[0m&amp;#27;[90m&quot; message&amp;#27;[0m &amp;#27;[90m# FundTransferStepDefs.Ensure_the_fund_transfer_is_complete(String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase time="0.016" classname="Scenario: Valid Payee  " name="Scenario: Valid Payee  ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[$100 transferred successfully to Jim!!]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[$100 transferred successfully to Jim!!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_the_fund_transfer_is_complete(FundTransferStepDefs.java:45)
+	at ✽.Then ensure the fund transfer is complete with &quot;$100 transferred successfully to Jim!!&quot; message(fundtransfer\test\fundtransfer.feature:11)
+</failure>
+  </testcase>
+  <testcase time="0" classname="Given the user is on Fund Transfer Page         " name="Given the user is on Fund Transfer Page         "/>
+  <testcase time="0" classname="When he enters \&quot;Unmesh\&quot; as payee name          " name="When he enters \&quot;Unmesh\&quot; as payee name          "/>
+  <testcase time="0" classname="And he enters \&quot;100\&quot; as amount           " name="And he enters \&quot;100\&quot; as amount           "/>
+  <testcase time="0" classname="And he Submits request for Fund Transfer            " name="And he Submits request for Fund Transfer            "/>
+  <testcase time="0" classname="Then ensure a transaction failure message \&quot;Transfer failed!! \&apos;Unmesh\&apos; is not registered in your List of Payees\&quot; is displayed             " name="Then ensure a transaction failure message \&quot;Transfer failed!! \&apos;Unmesh\&apos; is not registered in your List of Payees\&quot; is displayed             ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ✽.Then ensure a transaction failure message &quot;Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees&quot; is displayed(fundtransfer\test\fundtransfer.feature:18)
+</failure>
+    <system-out>&amp;#27;[1A    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mhe Submits request for Fund Transfer&amp;#27;[0m                                                                                     &amp;#27;[90m# FundTransferStepDefs.He_submits_request_for_fund_transfer()&amp;#27;[0m
+    &amp;#27;[90mThen &amp;#27;[0m&amp;#27;[90mensure a transaction failure message &quot;&amp;#27;[0m&amp;#27;[90m&amp;#27;[1mTransfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees&amp;#27;[0m&amp;#27;[90m&quot; is displayed&amp;#27;[0m &amp;#27;[90m# FundTransferStepDefs.Ensure_a_transaction_failure_message(String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase time="0" classname="Scenario: Invalid Payee        " name="Scenario: Invalid Payee        ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ✽.Then ensure a transaction failure message &quot;Transfer failed!! &apos;Unmesh&apos; is not registered in your List of Payees&quot; is displayed(fundtransfer\test\fundtransfer.feature:18)
+</failure>
+  </testcase>
+  <testcase time="0" classname="Given the user is on Fund Transfer Page               " name="Given the user is on Fund Transfer Page               "/>
+  <testcase time="0" classname="When he enters \&quot;Tim\&quot; as payee name                " name="When he enters \&quot;Tim\&quot; as payee name                "/>
+  <testcase time="0" classname="And he enters \&quot;1000000\&quot; as amount                 " name="And he enters \&quot;1000000\&quot; as amount                 "/>
+  <testcase time="0" classname="And he Submits request for Fund Transfer                  " name="And he Submits request for Fund Transfer                  "/>
+  <testcase time="0" classname="Then ensure a transaction failure message \&quot;Transfer failed!! account cannot be overdrawn\&quot; is displayed                   " name="Then ensure a transaction failure message \&quot;Transfer failed!! account cannot be overdrawn\&quot; is displayed                   ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[Transfer failed!! account cannot be overdrawn]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Transfer failed!! account cannot be overdrawn]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ✽.Then ensure a transaction failure message &quot;Transfer failed!! account cannot be overdrawn&quot; is displayed(fundtransfer\test\fundtransfer.feature:25)
+</failure>
+    <system-out>&amp;#27;[1A    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mhe Submits request for Fund Transfer&amp;#27;[0m                                                               &amp;#27;[90m# FundTransferStepDefs.He_submits_request_for_fund_transfer()&amp;#27;[0m
+    &amp;#27;[90mThen &amp;#27;[0m&amp;#27;[90mensure a transaction failure message &quot;&amp;#27;[0m&amp;#27;[90m&amp;#27;[1mTransfer failed!! account cannot be overdrawn&amp;#27;[0m&amp;#27;[90m&quot; is displayed&amp;#27;[0m &amp;#27;[90m# FundTransferStepDefs.Ensure_a_transaction_failure_message(String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase time="0" classname="Scenario: Account is overdrawn past the overdraft limit              " name="Scenario: Account is overdrawn past the overdraft limit              ">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[Transfer failed!! account cannot be overdrawn]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Transfer failed!! account cannot be overdrawn]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at fundtransfer.test.FundTransferStepDefs.Ensure_a_transaction_failure_message(FundTransferStepDefs.java:51)
+	at ✽.Then ensure a transaction failure message &quot;Transfer failed!! account cannot be overdrawn&quot; is displayed(fundtransfer\test\fundtransfer.feature:25)
+</failure>
+  </testcase>
+</testsuite>
